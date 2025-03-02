@@ -12,6 +12,7 @@ const app = express();
 
 const PORT = ENV_VARS.PORT
 
+SVGClipPathElement.use(express.json()); //will alllow us to parse req.body obj
 
 app.use("/api/v1/auth",authRoutes)
 
