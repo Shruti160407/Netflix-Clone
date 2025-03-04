@@ -39,9 +39,9 @@ export async function signup(req, res) {
         password,
         username,
         image
-       })
+       });
 
-       await newUser.save()
+       await newUser.save();
 
     }catch (error){
         console.log("Error in signup controller", error.message);
